@@ -1,0 +1,14 @@
+import math
+
+def ellipse_area(a, b):
+    """
+    Function to calculate the area of an ellipse inscribed in a rectangle with sides of length a and b.
+    """
+    return (math.pi * a * b) / 4
+
+# Example usage
+a = float(input("Enter the length of side a of the rectangle: "))
+b = float(input("Enter the length of side b of the rectangle: "))
+
+area = ellipse_area(a, b)
+print(f"The area of the inscribed ellipse is: {area}")
